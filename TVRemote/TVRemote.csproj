@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-ios</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <SupportedOSPlatformVersion>13.0</SupportedOSPlatformVersion>
+    <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
+    <ApplicationId>com.cleanyourtv.remote</ApplicationId>
+    <ApplicationTitle>TV Пульт</ApplicationTitle>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <!-- Unsigned build for eSign: iPhone-side signing applies the profile. -->
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <CodesignEntitlements></CodesignEntitlements>
+    <UseInterpreter>true</UseInterpreter>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="adbkey_p8.b64.txt" />
+  </ItemGroup>
+</Project>
